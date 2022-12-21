@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="http://localhost:3000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minigame</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./scripts/web3.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./process.js"></script>
+    <style>
+        #formDangKy, #danhsach {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #tbDS {
+            width: 90%;
+        }
+        #dong1 td, .row{
+            text-align: center;
+            padding: 4px;
+            border-bottom: 1px solid cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Minigame</h2>
+    <div id="formDangKy">
+        <button id="connectMM">Connect MetaMask</button>
+        <input type="text" id="txtHoten" placeholder="Họ tên" autocomplete="off">
+        <input type="text" id="txtEmail" placeholder="Email" autocomplete="off">
+        <input type="text" id="txtSoDT" placeholder="Điện thoại" autocomplete="off">
+        <input type="submit" id="btnDangKy" value="Send">
+    </div>
+    <div id="danhsach">
+        <table id="tbDS">
+            <tr id="dong1">
+                <td>Address</td>
+                <td>_ID</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

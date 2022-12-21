@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://127.0.0.1:3000">
+    <!-- Jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+
+    <!-- Boostrap 5.1.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.1.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome 6 Pro-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+
+    <!-- Sweet Alert 2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JS -->
+    <script src="./process.js" type="module"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./layout.css">
+
+    <title>Minigame</title>
+</head>
+
+<body>
+    <main>
+        <button id="connect_button">Connect Wallet</button>
+
+        <section id="wallet_info" hidden>
+            <h1 id="wallet_address"></h1>
+            <h2>Balance: <span id="wallet_balance"></span></h2>
+        </section>
+
+        <form action="" id="form">
+            <input type="text" id="txtEmail" placeholder="email" autocomplete="off" value="long@gmail.com">
+            <input type="text" id="txtHoTen" placeholder="ho ten" autocomplete="off" value="long">
+            <input type="text" id="txtSoDT" placeholder="so dien thoai" autocomplete="off" value="123456789">
+            <input type="text" id="txtAddressTo" placeholder="address to" list="listAdress" autocomplete="off">
+            <datalist id="listAdress">
+                <option value="0x9Fc4880aa16Fb7D6e27eb1bBC7e844412A09e0A7">Account1</option>
+                <option value="0xcE9b5AEe611544bb527958Ccc9Ca42061Eb9de56">Account2</option>
+                <option value="0x51bD1898beb02E0C95502479c4fA5Cb6B81F56fC">Account3</option>
+            </datalist>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
